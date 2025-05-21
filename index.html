@@ -1,11 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Review App</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <div class="container">
+    <h1>🌟 Review App</h1>
     
+    <div class="average-rating">Average Rating: 4.5 / 5</div>
+    
+    <form class="review-form">
+      <input type="text" placeholder="Your Name" required />
+      <textarea placeholder="Write your review..." required></textarea>
+      <select>
+        <option value="5">5 - Excellent</option>
+        <option value="4">4 - Good</option>
+        <option value="3">3 - Average</option>
+        <option value="2">2 - Poor</option>
+        <option value="1">1 - Terrible</option>
+      </select>
+      <button type="submit">Submit Review</button>
+    </form>
+
+    <div class="reviews">
+      <div class="review">
+        <div class="review-header">
+          <strong>Alice</strong>
+          <span class="stars">★★★★★</span>
+        </div>
+        <p>Amazing experience!</p>
+      </div>
+
+      <div class="review">
+        <div class="review-header">
+          <strong>Bob</strong>
+          <span class="stars">★★★★☆</span>
+        </div>
+        <p>Very good, would recommend.</p>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
